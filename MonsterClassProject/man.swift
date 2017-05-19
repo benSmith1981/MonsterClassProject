@@ -1,13 +1,13 @@
 //
-//  Boy.swift
+//  man.swift
 //  MonsterClassProject
 //
-//  Created by Ben Smith on 22/02/2017.
+//  Created by Ben Smith on 19/05/2017.
 //  Copyright © 2017 Ben Smith. All rights reserved.
 //
 
 import Foundation
 
-class Boy: Human {
+class Man: Human {
     
 }

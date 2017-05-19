@@ -9,7 +9,9 @@
 import Foundation
 
 class Human {
-    var name: String
+    static let whereDoTheyLive: String = "On Earth and Mars and Space"
+
+    let name: String
     var type: humanType
     var bones: [Bone]
     
@@ -17,5 +19,10 @@ class Human {
         self.name = name
         self.type = type
         self.bones = bones
+    }
+    
+    final func talk(word: String) {
+        //just say the words
+        print(word)
     }
 }

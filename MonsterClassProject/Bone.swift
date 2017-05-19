@@ -9,6 +9,7 @@
 import Foundation
 
 class Bone {
+    static let weight = 10.0
     var type: boneType
     var crunched: Bool
     
@@ -16,4 +17,19 @@ class Bone {
         self.type = type
         self.crunched = crunched
     }
+    
+    func crunchTheBone(crunched: Bool) {
+        self.crunched = crunched
+    }
 }
+
+
+//class Bone {
+//    var type: humanType
+//    var crunched: boneEnum
+//    
+//    init(type: humanType, crunched: boneEnum) {
+//        self.type = type
+//        self.crunched = crunched
+//    }
+//}

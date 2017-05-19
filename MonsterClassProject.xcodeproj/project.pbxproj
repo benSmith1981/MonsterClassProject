@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE32D6CF1ECEEE2700EC15D7 /* MonsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32D6CE1ECEEE2700EC15D7 /* MonsterTests.swift */; };
+		BE32D6D51ECEF03200EC15D7 /* man.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32D6D41ECEF03200EC15D7 /* man.swift */; };
+		BE32D6D71ECEF05200EC15D7 /* woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32D6D61ECEF05200EC15D7 /* woman.swift */; };
 		BEF684D61E5D99E7002EEA70 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF684D51E5D99E7002EEA70 /* main.swift */; };
 		BEF684DD1E5D9A25002EEA70 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF684DC1E5D9A25002EEA70 /* enums.swift */; };
 		BEF684DF1E5D9C13002EEA70 /* Bone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF684DE1E5D9C13002EEA70 /* Bone.swift */; };
@@ -28,6 +31,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE32D6CC1ECEEE2700EC15D7 /* MonsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE32D6CE1ECEEE2700EC15D7 /* MonsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterTests.swift; sourceTree = "<group>"; };
+		BE32D6D01ECEEE2700EC15D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE32D6D41ECEF03200EC15D7 /* man.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = man.swift; sourceTree = "<group>"; };
+		BE32D6D61ECEF05200EC15D7 /* woman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = woman.swift; sourceTree = "<group>"; };
 		BEF684D21E5D99E7002EEA70 /* MonsterClassProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MonsterClassProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF684D51E5D99E7002EEA70 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BEF684DC1E5D9A25002EEA70 /* enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
@@ -38,6 +46,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE32D6C91ECEEE2700EC15D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF684CF1E5D99E7002EEA70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,10 +63,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE32D6CD1ECEEE2700EC15D7 /* MonsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE32D6CE1ECEEE2700EC15D7 /* MonsterTests.swift */,
+				BE32D6D01ECEEE2700EC15D7 /* Info.plist */,
+			);
+			path = MonsterTests;
+			sourceTree = "<group>";
+		};
 		BEF684C91E5D99E7002EEA70 = {
 			isa = PBXGroup;
 			children = (
 				BEF684D41E5D99E7002EEA70 /* MonsterClassProject */,
+				BE32D6CD1ECEEE2700EC15D7 /* MonsterTests */,
 				BEF684D31E5D99E7002EEA70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				BEF684D21E5D99E7002EEA70 /* MonsterClassProject */,
+				BE32D6CC1ECEEE2700EC15D7 /* MonsterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +97,8 @@
 				BEF684DC1E5D9A25002EEA70 /* enums.swift */,
 				BEF684E41E5DA895002EEA70 /* Monster.swift */,
 				BEF684E21E5D9F55002EEA70 /* Boy.swift */,
+				BE32D6D41ECEF03200EC15D7 /* man.swift */,
+				BE32D6D61ECEF05200EC15D7 /* woman.swift */,
 				BEF684E01E5D9CFF002EEA70 /* Human.swift */,
 				BEF684DE1E5D9C13002EEA70 /* Bone.swift */,
 			);
@@ -80,6 +108,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BE32D6CB1ECEEE2700EC15D7 /* MonsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE32D6D31ECEEE2700EC15D7 /* Build configuration list for PBXNativeTarget "MonsterTests" */;
+			buildPhases = (
+				BE32D6C81ECEEE2700EC15D7 /* Sources */,
+				BE32D6C91ECEEE2700EC15D7 /* Frameworks */,
+				BE32D6CA1ECEEE2700EC15D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonsterTests;
+			productName = MonsterTests;
+			productReference = BE32D6CC1ECEEE2700EC15D7 /* MonsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BEF684D11E5D99E7002EEA70 /* MonsterClassProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEF684D91E5D99E7002EEA70 /* Build configuration list for PBXNativeTarget "MonsterClassProject" */;
@@ -103,10 +148,15 @@
 		BEF684CA1E5D99E7002EEA70 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Ben Smith";
 				TargetAttributes = {
+					BE32D6CB1ECEEE2700EC15D7 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = CWK29L7ZPT;
+						ProvisioningStyle = Automatic;
+					};
 					BEF684D11E5D99E7002EEA70 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -126,19 +176,40 @@
 			projectRoot = "";
 			targets = (
 				BEF684D11E5D99E7002EEA70 /* MonsterClassProject */,
+				BE32D6CB1ECEEE2700EC15D7 /* MonsterTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		BE32D6CA1ECEEE2700EC15D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		BE32D6C81ECEEE2700EC15D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE32D6CF1ECEEE2700EC15D7 /* MonsterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF684CE1E5D99E7002EEA70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE32D6D71ECEF05200EC15D7 /* woman.swift in Sources */,
 				BEF684DD1E5D9A25002EEA70 /* enums.swift in Sources */,
 				BEF684D61E5D99E7002EEA70 /* main.swift in Sources */,
 				BEF684DF1E5D9C13002EEA70 /* Bone.swift in Sources */,
 				BEF684E11E5D9CFF002EEA70 /* Human.swift in Sources */,
+				BE32D6D51ECEF03200EC15D7 /* man.swift in Sources */,
 				BEF684E51E5DA895002EEA70 /* Monster.swift in Sources */,
 				BEF684E31E5D9F55002EEA70 /* Boy.swift in Sources */,
 			);
@@ -147,6 +218,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		BE32D6D11ECEEE2700EC15D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				INFOPLIST_FILE = MonsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.MonsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BE32D6D21ECEEE2700EC15D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				INFOPLIST_FILE = MonsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.MonsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		BEF684D71E5D99E7002EEA70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -254,6 +355,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE32D6D31ECEEE2700EC15D7 /* Build configuration list for PBXNativeTarget "MonsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE32D6D11ECEEE2700EC15D7 /* Debug */,
+				BE32D6D21ECEEE2700EC15D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BEF684CD1E5D99E7002EEA70 /* Build configuration list for PBXProject "MonsterClassProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -270,6 +379,7 @@
 				BEF684DB1E5D99E7002EEA70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
