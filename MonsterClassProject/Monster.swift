@@ -23,7 +23,6 @@ class Monster{
         }
         willSet {
             print("I am just about to eat some more bones!")
-
         }
     }
     
@@ -77,7 +76,8 @@ class Monster{
     }
     
     func crunchBone(bone: Bone) {
-        bone.crunched = true
+//        bone.crunchTheBone(crunched: true)
+        bone.crunchTheBone(crunched: true)
         allCrunchedBones.append(bone)
 
         switch bone.type {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Bone {
+struct Bone {
     static let weight = 10.0
     var type: boneType
     var crunched: Bool
@@ -18,7 +18,7 @@ class Bone {
         self.crunched = crunched
     }
     
-    func crunchTheBone(crunched: Bool) {
+    mutating func crunchTheBone(crunched: Bool) {
         self.crunched = crunched
     }
 }
