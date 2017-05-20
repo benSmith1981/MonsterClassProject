@@ -38,6 +38,8 @@ var monster1 = Monster.init(age: 1000, name: "Bone pod")
 var bonesEaten = monster1.eatHuman(human: theBoy)
 print(bonesEaten.count)
 monster1.weight = 1
+var bone1 = Bone.init(type: .boyBone, crunched: false)
+monster1.crunchBone(bone: &bone1)
 print("Monster weight \(monster1.weight)")
 print()
 print(monster1.eatHuman(human: theMan).count)

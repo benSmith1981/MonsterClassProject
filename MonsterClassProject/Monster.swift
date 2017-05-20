@@ -58,25 +58,28 @@ class Monster{
     }
     
     func eatHuman(human: Human) -> [Bone] {
-        crunchBones(bones: human.bones)
+        //passing in the reference here to bones
+        crunchBones(bones: &human.bones)
         return allCrunchedBones
     }
     
     func eatManyHumans(humans: [Human]) -> [Bone] {
         for human in humans {
-            crunchBones(bones: human.bones)
+            //passing in the reference here to bones
+            crunchBones(bones: &human.bones)
         }
         return allCrunchedBones
     }
     
-    func crunchBones(bones: [Bone]) {
-        for currentBone in bones {
-            crunchBone(bone: currentBone)
+    //how to enumerate an array of bones and pass in the actual reference
+    func crunchBones(bones: inout [Bone]) {
+        for (index, _) in bones.enumerated() {
+            crunchBone(bone: &bones[index])
         }
     }
     
-    func crunchBone(bone: Bone) {
-//        bone.crunchTheBone(crunched: true)
+    //Good use of inout when you actually want to change the value of a struct passed in as a parameter
+    func crunchBone(bone: inout Bone) {
         bone.crunchTheBone(crunched: true)
         allCrunchedBones.append(bone)
 
